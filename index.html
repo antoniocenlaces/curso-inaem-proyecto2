@@ -10,6 +10,12 @@
   </head>
   <body>
     <button id="btnPais">Obtener paises</button>
+    <input
+      type="file"
+      name="fileinput"
+      id="fileinput"
+      onchange="readFileFromStorage(this.files)"
+    />
     <main class="container">
       <div class="countries">
         <!--
