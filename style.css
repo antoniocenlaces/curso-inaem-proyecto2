@@ -12,9 +12,13 @@ body {
   color: #555;
   background-color: #f7f7f7;
   min-height: 100vh;
+  padding-top: 1.5rem;
+}
+.countriesBody {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 1rem;
 }
 .container {
   display: flex;
@@ -39,7 +43,7 @@ body {
   /* overflow: hidden; */
 }
 .neighbour::before {
-  content: 'Neighbour country';
+  content: "Neighbour country";
   width: 100%;
   position: absolute;
   top: -4rem;
@@ -105,18 +109,47 @@ body {
   border: 3rem solid white;
   box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.form {
+  color: #000;
+  width: 50%;
+}
+label,
+legend {
+  display: inline;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.form-block {
+  margin: 1rem;
+}
+.form-label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.form-control {
+  width: 80%;
+}
+.envia {
+  background-color: green;
+  border-radius: 0.5rem;
+  border: 2px double #1055d8;
+  color: #fff;
+  font-weight: bold;
+  height: 2.5rem;
+  min-width: 8rem;
+}
+.envia:hover {
+  border: 2px double #9bef9b;
+}
+.borra {
+  background-color: red;
+  border-radius: 0.5rem;
+  border: 2px double #1055d8;
+  color: #fff;
+  font-weight: bold;
+  height: 2.5rem;
+  min-width: 8rem;
+}
+.borra:hover {
+  border: 2px double #9bef9b;
+}

@@ -9,16 +9,40 @@
     <title>Asynchronous JavaScript</title>
   </head>
   <body>
-    <button id="btnPais">Obtener paises</button>
-    <input
-      type="file"
-      name="fileinput"
-      id="fileinput"
-      onchange="readFileFromStorage(this.files)"
-    />
-    <main class="container">
-      <div class="countries">
-        <!--
+    <div class="container">
+      <form method="POST">
+        <fieldset>
+          <legend>Averigua donde estás:</legend>
+          <div class="form-block">
+            <label for="latitude">Introduce Latitud</label>
+            <input type="text" name="latitude" id="latitude" value="52.518" />
+          </div>
+          <div class="form-block">
+            <label for="longitude">Introduce Longitud</label>
+            <input type="text" name="longitude" id="longitude" value="13.361" />
+          </div>
+          <div class="form-block">
+            <button class="envia">Comprueba</button>
+            <button class="borra" type="reset">Borra</button>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Caso la API https://geocode.xyz no responda:</legend>
+          <div class="form-block">
+            <input
+              type="file"
+              name="fileinput"
+              id="fileinput"
+              onchange="readFileFromStorage(this.files)"
+            />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <main class="countriesBody">
+      <div class="container">
+        <div class="countries">
+          <!--
         <article class="country">
           <img class="country__img" src="" />
           <div class="country__data">
@@ -29,7 +53,7 @@
             <p class="country__row"><span>:moneybag:</span>CUR</p>
           </div>
         </article>
-        -->
+        --></div>
       </div>
     </main>
     <script defer src="./script.js"></script>
